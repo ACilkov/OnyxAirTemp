@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Onyx Air works with chartering private jets for all destinations in the United States of America and globally. Fly in comfort, luxury and safety.">
+    <meta name="keywords" content="private jet, jet, private jet flight, charter jet, onyx, onyx air, onyx air private je, onyx air jet">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <script
+      src="https://kit.fontawesome.com/536fa19072.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="${require('./favicon/apple-touch-icon-120x120.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="${require('./favicon/favicon-32x32.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="${require('./favicon/favicon-16x16.png')}"
+    />
+    <title>Onyx Air - Private Jet Chareter, Private jet Hire, Chartered Flights</title>
+  <link rel="icon" href="favicon.ico"><script defer src="home567f7d3a9f767c428b34.js"></script></head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div id="header-container">
+        <!-- Navigation Hamburger Menu -->
+        <nav id="hamburger-menu">
+          <div id="nav-container">
+            <div>
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+
+              <ul class="menu-box">
+                <p class="t24">Onyx Air</p>
+                <hr />
+                <li>
+                  <a role="link" class="menu-item t24" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="private.html"
+                    >Why Private</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="onyx.html"
+                    >Why Onyx</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="howitworks.html"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="safety.html"
+                    >Safety</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="emptylegs.html"
+                    >Empty Legs</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+
+                <div id="burger-menu-footer">
+                  <div class="BMF-top">
+                    <p>Our social media</p>
+                    <div class="social-icons">
+                      <a role="link" href="#"
+                        ><i class="social-links fa fa-brands fa-facebook-f"></i
+                      ></a>
+                      <a role="link" href="https://www.linkedin.com/company/onyx-air/about/"
+                        ><i class="social-links fa fa-brands fa-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="BMF-bot">
+                    <a role="link" href="privacypolicy.html" class="left-ali"
+                      >Privacy Policy
+                    </a>
+                    <hr />
+                    <a role="link" href="careers.html">Careers</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Logo and Button -->
+        <img
+          id="OnyxAirLogo"
+          alt="Onyx Air Logo"
+          onclick="window.location.href='index.html'"
+        />
+        <button
+          role="link"
+          id="btn-request-flight"
+          class="btn-request t12"
+          type="button"
+          onclick="window.location.href='#request-flight'"
+        >
+          QUOTE
+        </button>
+      </div>
+    </header>
+    <!-- Hero -->
+    <div id="hero" class="hero-container">
+      <div class="hero-img-cover">
+        <img id="home-hero" alt="Onyx Air Logo" />
+      </div>
+      <div class="hero-text-container">
+        <div class="hero-air-logo">
+          <h1 class="centered">Onyx Air</h1>
+          <img id="OnyxAirLogoHero" alt="Onyx Air Logo" />
+        </div>
+        <p class="centered t24">The Pinnacle of Luxury in the Air</p>
+        <hr />
+      </div>
+      <span class="scroll">Scroll</span>
+      <div class="container_mouse">
+        <span class="mouse-btn">
+          <span class="mouse-scroll"></span>
+        </span>
+      </div>
+    </div>
+    <!-- Body Content -->
+    <main id="body-content">
+      <!-- Request Flight Section -->
+      <section id="request-flight" class="main-container">
+        <div class="header">
+          <h2 class="font-pm semibweight">Request a Flight</h2>
+          <p>
+            Enter your flight details below and our dedicated booking team will
+            contact you shortly with the best options for your trip
+          </p>
+        </div>
+        <!-- Request Flight Form -->
+        <div class="form-container">
+          <form
+            id="request-form"
+            action="POST"
+            data-netlify="true"
+            name="Flight Information"
+            autocomplete="off"
+            onsubmit="handleSubmit(event)"
+          >
+            <div id="trip-type">
+              <div class="one-way">
+                <input type="radio" name="trip-type-select" id="one-way" value="one-way" checked/>
+                <label for="one-way">One Way Trip</label>
+              </div>
+              <div class="return-trip">
+                <input type="radio" name="trip-type-select" id="return-trip" value="return-trip" />
+                <label for="return-trip">Return Trip</label>
+              </div>
+            </div>
+            <div id="initial-form">
+              <div class="from">
+                <div class="from-head">
+                  <i class="departure fa fa-solid fa-plane-departure"></i>
+                  <label class="t12" for="from">From*</label>
+                </div>
+                <input name="from" id="from" placeholder="From*" required onkeyup="showResults(this.value, event)">
+                <div id="result-from">
+
+                </div>
+                </input>
+              </div>
+              <div class="to">
+                <div class="to-head">
+                  <i class="landing fa fa-solid fa-plane-arrival"></i>
+                  <label class="t12" for="to">To*</label>
+                </div>
+                <div class="to-body">
+                  <input name="to" id="to" placeholder="To*" required onkeyup="showResults(this.value, event)">
+                  <div id="result-to">
+                  </div>
+                  </input>
+                </div>
+              </div>
+              <div class="departure-date">
+                <div class="departure-head">
+                  <i class="date-icon fa fa-solid fa-calendar"></i>
+                  <label class="t12" for="departure-date"
+                    >Departure Date*</label
+                  >
+                </div>
+                <div class="departure-body">
+                  <input
+                    type="date"
+                    name="departure-date"
+                    id="departure-date"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="return-date">
+                <div class="return-head">
+                  <i class="date-icon fa fa-solid fa-calendar"></i>
+                  <label class="t12" for="return-date">Return Date</label>
+                </div>
+                <div class="return-body">
+                  <input type="date" name="return-date" id="return-date" />
+                </div>
+              </div>
+              <div class="passengers">
+                <div class="passengers-head">
+                  <i class="passengers-icon fa fa-solid fa-users"></i>
+                  <label class="t12" for="passengers">Passengers*</label>
+                </div>
+                <div class="passengers-body">
+                  <input
+                    type="number"
+                    name="passengers"
+                    id="passengers"
+                    min="1"
+                    max="100"
+                    placeholder="Passenger"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="send-request">
+              <label for="request-btn-flight"></label>
+              <button
+                id="btn-send-request"
+                type="button"
+                role="button"
+                value="REQUEST"
+              >
+                REQUEST
+                <i class="chevron-right fa fa-duotone fa-chevron-right"></i>
+              </button>
+            </div>
+          <!-- Hidden - make through JS -->
+          <hr id="submit-form-hr" />
+          <!-- Second form -->
+          <div id="submit-form">
+              <div class="row-1">
+                <div class="fname">
+                  <div class="fname-head">
+                    <label class="t12" for="fname">First Name*</label>
+                  </div>
+                  <div class="fname-body">
+                    <input type="text" name="fname" id="fname" required />
+                  </div>
+                </div>
+                <div class="lname">
+                  <div class="lname-head">
+                    <label class="t12" for="lname">Last Name*</label>
+                  </div>
+                  <div class="lname-body">
+                    <input type="text" name="lname" id="lname" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="email">
+                  <div class="email-head">
+                    <label class="t12" for="email">Email*</label>
+                  </div>
+                  <div class="email-body">
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                </div>
+                <div class="phone-number">
+                  <div class="phone-number-head">
+                    <label class="t12" for="phone-number">Phone Number</label>
+                  </div>
+                  <div class="phone-number-body">
+                    <input
+                      type="tel"
+                      name="phone-number"
+                      id="phone-number"
+                      type="tel"
+                      minlength="4"
+                      maxlength="20"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row-3">
+                <div class="method-contact">
+                  <div class="method-head">
+                    <label class="t12" for="method"
+                      >Preferred method of contact*</label
+                    >
+                  </div>
+                  <div class="method-body">
+                    <select name="method" id="method" required>
+                      <div class="method-select">
+                        <option value="" disabled selected hidden></option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                        <option value="call">Call</option>
+                      </div>
+                    </select>
+                  </div>
+                </div>
+                <div class="flown-before">
+                  <div class="flown-before-head">
+                    <label class="t12" for="flown-before"
+                      >Have you ever flown before*</label
+                    >
+                  </div>
+                  <div class="flown-before-body">
+                    <select name="flown-before" id="flown-before" required>
+                      <div class="flown-before-select">
+                        <option value="" disabled selected hidden></option>
+                        <option value="multiple">Multiple Times</option>
+                        <option value="once">Once</option>
+                        <option value="no">No</option>
+                      </div>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row-4">
+                <div class="aircraft-type">
+                  <div class="aircraft-head">
+                    <label class="t12" for="aircraft"
+                      >Preferred aircraft or category of aircraft</label
+                    >
+                  </div>
+                  <div class="aircraft-body">
+                    <select name="aircraft" id="aircraft">
+                      <div class="aircraft-select">
+                        <option value="" disabled selected hidden></option>
+                        <option value="turboprop">Turboprop</option>
+                        <option value="very light jet">
+                          Very Light Jet (VLJ)
+                        </option>
+                        <option value="light jet">Light Jet</option>
+                        <option value="super light jet">Super Light Jet</option>
+                        <option value="midsize jet">Midsize Jet</option>
+                        <option value="super midsize jet">
+                          Super-Midsize Jet
+                        </option>
+                        <option value="heavy jet">Heavy Jet</option>
+                        <option value="ultra heavy jet">Ultra-Heavy Jet</option>
+                      </div>
+                    </select>
+                  </div>
+                </div>
+                <div class="add-info">
+                  <div class="add-info-head">
+                    <label class="t12" for="add-info"
+                      >Additional information</label
+                    >
+                  </div>
+                  <div class="add-info-body">
+                    <textarea
+                      name="add-info"
+                      id="add-info"
+                      cols="60"
+                      placeholder="Message..."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div id="submit-sec">
+              <div class="submit-request">
+                <label for="submit-req-btn"></label>
+                <button
+                  id="submit-req-btn"
+                  type="submit"
+                  form="request-form"
+                  role="button"
+                  value="submit"
+                >
+                  SUBMIT
+                  <i class="chevron-right fa fa-duotone fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Contact card -->
+          <div id="contact-card">
+            <p class="ct font-sc semibweight">Contact Info</p>
+            <div class="contact-info">
+              <div class="ci-phone">
+                <i class="icn-phone clr-sc fa fa-solid fa-phone"></i>
+                <p class="font-tr">&zwj;+1 &zwj;(800) &zwj;935-6154</p>
+              </div>
+              <div class="ci-mail">
+                <i class="icn-mail clr-sc fa fa-solid fa-envelope"></i>
+                <p class="font-tr">
+                  &zwj;contact<br class="hidden" />@flyonyxair.com
+                </p>
+              </div>
+              <div class="ci-location">
+                <i class="icn-location clr-sc fa fa-solid fa-map-pin"></i>
+                <p class="font-tr">
+                  287 Park Avenue S New York, NY, USA 10010
+                </p>
+              </div>
+            </div>
+            <div class="cc-social">
+              <p class="t12 font-sc">Our social media</p>
+              <div class="cc-social-icons">
+                <a role="link" href="#"
+                  ><i class="social-links fa fa-brands fa-facebook-f"></i
+                ></a>
+                <a role="link" href="https://www.linkedin.com/company/onyx-air/about/"
+                  ><i class="social-links fa fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="requestModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <p class="font-tr t24 semibweight ct">REQUEST CONFIRMATION</p>
+            </div>
+            <div class="modal-body">
+              <p class="font-tr t24 ct">
+                Your request has been sent to our booking team, we will contact
+                you shortly with the best options for your trip.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                id="btn-close-modal"
+                role="link"
+                class="btn-read-more-sc"
+                type="button"
+              >
+                RETURN
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Private Section -->
+      <section id="why-private">
+        <div class="why-private-bg bg-clr-gr-lr">
+          <div class="main-container">
+            <h2 class="font-tr semibweight">Why Private?</h2>
+            <div class="why-private-body">
+              <div class="why-private-top">
+                <p class="font-tr">
+                  At Onyx Air, we recognize that time is your most precious
+                  resource, and private aviation is a service that maximizes the
+                  valuable time that you have on your hands, be it time for
+                  business, or time spent with your loved ones.
+                </p>
+                <button
+                  role="link"
+                  class="btn-read-more-sc t12"
+                  type="button"
+                  onclick="window.location.href='private.html'"
+                >
+                  READ MORE
+                </button>
+              </div>
+              <div class="why-private-pictures">
+                <div class="private-image-container">
+                  <p class="centered t24 font-tr semibweight hovertext">
+                    COMFORT
+                  </p>
+                  <div class="private-comfort">
+                    <img id="img-private-comfort" alt="Lady in private plane" />
+                  </div>
+                </div>
+                <div class="private-image-container">
+                  <p class="centered t24 font-tr semibweight hovertext">
+                    SAFETY
+                  </p>
+                  <div class="private-safety">
+                    <img id="img-private-safety" alt="Private jet cockpit" />
+                  </div>
+                </div>
+                <div class="private-image-container">
+                  <p class="centered t24 font-tr semibweight hovertext">
+                    PRIVACY
+                  </p>
+                  <div class="private-privacy">
+                    <img
+                      id="img-private-privacy"
+                      alt="A couple in private jet"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Why Onyx Section -->
+      <section id="why-onyx">
+        <div class="main-container">
+          <h2 class="font-pm semibweight">Why Onyx?</h2>
+          <div class="why-onyx-body">
+            <div class="why-onyx-top">
+              <p>
+                At Onyx Air we are different, and we mean it. Let’s be honest,
+                there are more air charter brokers than you can count. Zero
+                regulation means that pretty much anyone can enter this business
+                with no vetting or training whatsoever. On top of that, you may
+                find that your broker is nowhere to be reached once you book a
+                flight. Learn more about how we are different.
+              </p>
+              <button
+                role="link"
+                class="btn-read-more-sc-v2 t12"
+                type="button"
+                onclick="window.location.href='onyx.html'"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="why-onyx-pictures">
+          <div class="why-onyx-image-container">
+            <p class="centered t128 font-tr semibweight">ONYX AIR</p>
+            <div class="onyx-bg">
+              <img
+                class="img-onyx-air-styled-bg"
+                alt="Gradient lines background"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it works -->
+      <section id="how-it-works">
+        <div class="main-container">
+          <h2 class="font-pm semibweight">How it Works</h2>
+          <div class="how-it-works-body">
+            <div class="steps">
+              <div class="steps-row-1">
+                <div class="row-container">
+                  <img id="step1icon" alt="Request a flight icon" />
+                  <p class="steps-text t12 font-tr">Step 1</p>
+                  <p class="font-tr steps-text-body">Request a Flight</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+                <div class="row-container">
+                  <img id="step2icon" alt="Request received icon" />
+                  <p class="steps-text t12 font-tr">Step 2</p>
+                  <p class="font-tr steps-text-body">Request Received</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+                <div class="row-container">
+                  <img id="step3icon" alt="Get your quotes icon" />
+                  <p class="steps-text t12 font-tr">Step 3</p>
+                  <p class="font-tr steps-text-body">Get Your Quotes</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+              </div>
+              <div class="steps-row-2">
+                <div class="row-container">
+                  <img id="step4icon" alt="Trip Confirmation icon" />
+                  <p class="steps-text t12 font-tr">Step 4</p>
+                  <p class="font-tr steps-text-body">Trip Confirmation</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+                <div class="row-container">
+                  <img id="step5icon" alt="Take Off icon" />
+                  <p class="steps-text t12 font-tr">Step 5</p>
+                  <p class="font-tr steps-text-body">Take Off!</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+                <div class="row-container">
+                  <img id="step6icon" alt="Landing icon" />
+                  <p class="steps-text t12 font-tr">Step 6</p>
+                  <p class="font-tr steps-text-body">Landing!</p>
+                  <div class="rectangle-steps"></div>
+                </div>
+              </div>
+            </div>
+            <div class="how-it-works-bot">
+              <p class="font-tr">
+                Onyx Air makes the experience of private aviation as easy as it
+                should be. You can read more about our 6-step process which will
+                explain in detail how a flight works with Onyx Air.
+              </p>
+              <button
+                role="link"
+                class="btn-read-more-pm-v2 t12"
+                type="button"
+                onclick="window.location.href='howitworks.html'"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="how-it-works-bg"></div>
+      </section>
+      <!-- Safety -->
+      <section id="safety">
+        <div class="main-container">
+          <h2 class="font-pm semibweight">Safety</h2>
+          <div class="safety-body">
+            <div class="safety-top">
+              <p>
+                We have created a proprietary Onyx Verified (OV) program that
+                goes beyond all government regulations when it comes to vetting
+                an operator’s safety record. Before presenting you with an
+                aircraft option for a flight, we thoroughly research both the
+                operator and the aircraft’s incident history (if any), the age
+                of the aircraft, the standards they set for their pilots, as
+                well as the frequency of maintenance inspections. Our
+                tech-powered OV database ensures that you will always fly in
+                utmost safety with complete peace of mind.
+              </p>
+              <button
+                role="link"
+                class="btn-read-more-sc-v2 t12"
+                type="button"
+                onclick="window.location.href='onyx.html'"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+          <div class="safety-pictures">
+            <div class="safety-image-container">
+              <div class="safety-safe">
+                <img id="img-safety-safe" alt="Private jet pilot" />
+                <p class="font-tr t24">Safe</p>
+              </div>
+              <div class="safety-secure">
+                <img id="img-safety-secure" alt="Private jet pilots" />
+                <p class="font-tr t24">Secure</p>
+              </div>
+              <div class="safety-always">
+                <img id="img-safety-always" alt="Private jet pilot" />
+                <p class="font-tr t24">Always there for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="safety-bgs">
+            <div class="safety-left-bg bg-clr-gr-lr"></div>
+            <div class="safety-middle-bg bg-clr-gr-mid"></div>
+            <div class="safety-right-bg bg-clr-gr-rl"></div>
+          </div>
+          <div class="ct safety-priority">
+            <p class="t24">Your Safety is Our Top Priority</p>
+            <hr />
+          </div>
+        </div>
+      </section>
+      <!-- Empty Legs -->
+      <section id="empty-legs">
+        <div class="main-container">
+          <h2 class="font-pm semibweight">Empty Legs</h2>
+          <div class="empty-legs-body">
+            <div class="empty-legs-top">
+              <p>
+                One of the best-kept secrets of private aviation is the concept
+                of an empty leg flight. These deeply discounted flights are
+                available when an aircraft needs to fly from its base (or
+                current location) to another airport where it has a scheduled
+                departure.
+              </p>
+              <button
+                role="link"
+                class="btn-read-more-pm t12"
+                type="button"
+                onclick="window.location.href='emptylegs.html'"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+          <div class="empty-legs-pictures">
+            <div class="empty-legs-image-container">
+              <div class="empty-legs-image-left">
+                <img
+                  id="img-empty-legs-plane"
+                  alt="Private jet flying over lake and city"
+                />
+              </div>
+              <div class="empty-legs-image-right">
+                <img id="img-empty-legs-interior" alt="Private jet interior" />
+                <img
+                  id="img-empty-legs-stewardess"
+                  alt="Stewardess in private jet"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-legs-bg"></div>
+      </section>
+      <!-- Request Video Banner -->
+      <section id="request-video">
+        <div class="video-container">
+          <div class="request-video-text">
+            <p class="t32 font-tr semibweight">Excellence in Luxury Aviation</p>
+            <button
+              role="link"
+              class="btn-read-more-bn t32"
+              type="button"
+              onclick="window.location.href='#request-flight'"
+            >
+              REQUEST
+            </button>
+          </div>
+          <video autoplay loop muted playsinline>
+            <source
+              id="video-loop-mp4"
+              src="Request_Banner.mp4"
+              type="video/mp4"
+            />
+            <source
+              id="video-loop"
+              src="Request_Banner.webm"
+              type="video/webm"
+            />
+            Your browser doesn't support the video.
+          </video>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="logo">
+              <p class="font-tr t12">Onyx Air</p>
+              <img
+                id="OnyxAirLogoFoot"
+                alt="Onyx Air Logo"
+                onclick="window.location.href='index.html'"
+              />
+            </div>
+            <div class="site-links">
+              <p class="font-tr t12">
+                <a href="privacypolicy.html">Privacy Policy</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="careers.html">Careers</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="contact.html">Contact Us</a>
+              </p>
+            </div>
+            <div class="footer-social-links">
+              <a role="link" href="#"
+                ><i class="social-links fa fa-brands fa-facebook-f"></i
+              ></a>
+              <a role="link" href="https://www.linkedin.com/company/onyx-air/about/"
+                ><i class="social-links fa fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-bot">
+            <p class="font-tr t10">
+              &copy Onyx Air 2022. Onyx Air®, and the Onyx Air logo® are
+              registered trademarks of Onyx Air. All rights reserved. Onyx Air
+              LLC is an Air Charter Broker and not a U.S. or foreign direct air
+              carrier. Onyx Air LLC does not own or operate any aircraft and
+              contracts air transportation services to FAA Certified Part 135
+              carriers or their foreign equivalents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

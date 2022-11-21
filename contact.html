@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/536fa19072.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="${require('./favicon/apple-touch-icon-120x120.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="${require('./favicon/favicon-32x32.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="${require('./favicon/favicon-16x16.png')}"
+    />
+    <title>Contact Us - Onyx Air</title>
+  <link rel="icon" href="favicon.ico"><script defer src="contactus483d09c94324a6869ccb.js"></script></head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div id="header-container">
+        <!-- Navigation Hamburger Menu -->
+        <nav id="hamburger-menu">
+          <div id="nav-container">
+            <div>
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+
+              <ul class="menu-box">
+                <p class="t24">Onyx Air</p>
+                <hr />
+                <li>
+                  <a role="link" class="menu-item t24" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="private.html"
+                    >Why Private</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="onyx.html"
+                    >Why Onyx</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="howitworks.html"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="safety.html"
+                    >Safety</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="emptylegs.html"
+                    >Empty Legs</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+
+                <div id="burger-menu-footer">
+                  <div class="BMF-top">
+                    <p>Our social media</p>
+                    <div class="social-icons">
+                      <a role="link" href="#"
+                        ><i class="social-links fa fa-brands fa-facebook-f"></i
+                      ></a>
+                      <a
+                        role="link"
+                        href="https://www.linkedin.com/company/onyx-air/about/"
+                        ><i class="social-links fa fa-brands fa-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="BMF-bot">
+                    <a role="link" href="privacypolicy.html" class="left-ali"
+                      >Privacy Policy
+                    </a>
+                    <hr />
+                    <a role="link" href="careers.html">Careers</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Logo and Button -->
+        <img
+          id="OnyxAirLogo"
+          alt="Onyx Air Logo"
+          onclick="window.location.href='index.html'"
+        />
+        <button
+          role="link"
+          id="btn-request-flight-private"
+          class="btn-request t12"
+          type="button"
+          onclick="window.location.href='index.html#request-flight'"
+        >
+          QUOTE
+        </button>
+      </div>
+    </header>
+    <main id="body-content-sup" class="main-container">
+      <h1 class="font-pm semibweight t64">Contact Us</h1>
+      <section id="contact-us-form">
+        <form
+          action="POST"
+          id="contact-us"
+          data-netlify="true"
+          name="Contact Us Form"
+          onsubmit="handleSubmit(event)"
+        >
+          <div class="first-name">
+            <div class="first-name-head">
+              <label class="t12" for="first-name">First Name*</label>
+            </div>
+            <div class="first-name-body">
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+          </div>
+          <div class="last-name">
+            <div class="last-name-head">
+              <label class="t12" for="last-name">Last Name*</label>
+            </div>
+            <div class="last-name-body">
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+          </div>
+          <div class="email">
+            <div class="email-head">
+              <label class="t12" for="email-contact-us">Email*</label>
+            </div>
+            <div class="email-body">
+              <input
+                type="email-contact-us"
+                name="email-contact-us"
+                id="email-contact-us"
+                required
+              />
+            </div>
+          </div>
+          <div class="phone-number">
+            <div class="phone-number-head">
+              <label class="t12" for="phone-number-contact">Phone Number</label>
+            </div>
+            <div class="phone-number-body">
+              <input
+                type="tel"
+                name="phone-number-contact"
+                id="phone-number-contact"
+                minlength="4"
+                maxlength="20"
+              />
+            </div>
+          </div>
+          <div class="add-info">
+            <div class="add-info-head">
+              <label class="t12" for="add-info-contact"
+                >Additional information</label
+              >
+            </div>
+            <div class="add-info-body">
+              <textarea
+                name="add-info-contact"
+                id="add-info-contact"
+                rows="5"
+                cols="60"
+                placeholder="Message..."
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <div id="submit-contact">
+          <div class="policy-accept">
+            <input
+              type="checkbox"
+              name="accept-policy"
+              id="accept-policy"
+              required
+            />
+            <label for="accept-policy">Accept Privacy Policy</label>
+          </div>
+          <label for="submit-contact-btn"></label>
+          <button id="submit-contact-btn" type="submit" form="contact-us">
+            SEND
+          </button>
+        </div>
+        <div id="requestModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <p class="font-tr t24 semibweight ct">REQUEST CONFIRMATION</p>
+            </div>
+            <div class="modal-body">
+              <p class="font-tr t24 ct">
+                Your request has been sent to our booking team, we will contact
+                you shortly with the best options for your trip.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                id="btn-close-modal"
+                role="link"
+                class="btn-read-more-sc"
+                type="button"
+              >
+                RETURN
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us-card-contact-page">
+        <div class="contact-card">
+          <p class="ct font-pm semibweight">Get In Touch Today</p>
+          <div class="contact-info">
+            <div class="ci-phone">
+              <i class="icn-phone clr-pm fa fa-solid fa-phone"></i>
+              <p class="font-tr">&zwj;+1 &zwj;(800) &zwj;935-&zwj;6154</p>
+            </div>
+            <div class="ci-mail">
+              <i class="icn-mail clr-pm fa fa-solid fa-envelope"></i>
+              <p class="font-tr">&zwj;contact@flyonyxair.com</p>
+            </div>
+            <div class="ci-location">
+              <i class="icn-location clr-pm fa fa-solid fa-map-pin"></i>
+              <p class="font-tr">287 Park Avenue S New York, NY, USA 10010</p>
+            </div>
+          </div>
+          <div class="cc-social">
+            <p class="t12 font-pm">Social media</p>
+            <div class="cc-social-icons">
+              <a role="link" href="#"
+                ><i class="social-links fa fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                role="link"
+                href="https://www.linkedin.com/company/onyx-air/about/"
+                ><i class="social-links fa fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-branches">
+        <h2 class="font-pm semibweight">Our Branches</h2>
+        <hr />
+        <div class="branches">
+          <div class="branch">
+            <h3 class="regweight">New York</h3>
+            <div class="branch-contact">
+              <div class="branch-phone">
+                <i class="icn-phone clr-pm fa fa-solid fa-phone"></i>
+                <p>&zwj;+1 &zwj;(800) &zwj;935-&zwj;6154</p>
+              </div>
+              <div class="branch-email">
+                <i class="icn-mail clr-pm fa fa-solid fa-envelope"></i>
+                <p>newyork@flyonxyair.com</p>
+              </div>
+              <div class="branch-location">
+                <i class="icn-location clr-pm fa fa-solid fa-map-pin"></i>
+                <p>287 Park Avenue S New York, NY, USA 10010</p>
+              </div>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="branch">
+            <h3 class="regweight">Miami</h3>
+            <div class="branch-contact">
+              <div class="branch-phone">
+                <i class="icn-phone clr-pm fa fa-solid fa-phone"></i>
+                <p>&zwj;+1 &zwj;(305) &zwj;515-&zwj;8405</p>
+              </div>
+              <div class="branch-email">
+                <i class="icn-mail clr-pm fa fa-solid fa-envelope"></i>
+                <p>miami@flyonyxair.com</p>
+              </div>
+              <div class="branch-location">
+                <i class="icn-location clr-pm fa fa-solid fa-map-pin"></i>
+                <p>6303 Blue Lagoon Drive Miami, FL, USA 33126</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="logo">
+              <p class="font-tr t12">Onyx Air</p>
+              <img
+                id="OnyxAirLogoFoot"
+                alt="Onyx Air Logo"
+                onclick="window.location.href='index.html'"
+              />
+            </div>
+            <div class="site-links">
+              <p class="font-tr t12">
+                <a href="privacypolicy.html">Privacy Policy</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="careers.html">Careers</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="contact.html">Contact Us</a>
+              </p>
+            </div>
+            <div class="footer-social-links">
+              <a role="link" href="#"
+                ><i class="social-links fa fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                role="link"
+                href="https://www.linkedin.com/company/onyx-air/about/"
+                ><i class="social-links fa fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-bot">
+            <p class="font-tr t10">
+              &copy Onyx Air 2022. Onyx Air®, and the Onyx Air logo® are
+              registered trademarks of Onyx Air. All rights reserved. Onyx Air
+              LLC is an Air Charter Broker and not a U.S. or foreign direct air
+              carrier. Onyx Air LLC does not own or operate any aircraft and
+              contracts air transportation services to FAA Certified Part 135
+              carriers or their foreign equivalents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

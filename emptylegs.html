@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/536fa19072.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="${require('./favicon/apple-touch-icon-120x120.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="${require('./favicon/favicon-32x32.png')}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="${require('./favicon/favicon-16x16.png')}"
+    />
+    <title>Empty Legs - Onyx Air</title>
+  <link rel="icon" href="favicon.ico"><script defer src="emptylegsc8b3e6bfeadc9b2dafe4.js"></script></head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div id="header-container">
+        <!-- Navigation Hamburger Menu -->
+        <nav id="hamburger-menu">
+          <div id="nav-container">
+            <div>
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+
+              <ul class="menu-box">
+                <p class="t24">Onyx Air</p>
+                <hr />
+                <li>
+                  <a role="link" class="menu-item t24" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="private.html"
+                    >Why Private</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="onyx.html"
+                    >Why Onyx</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="howitworks.html"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="safety.html"
+                    >Safety</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="emptylegs.html"
+                    >Empty Legs</a
+                  >
+                </li>
+                <li>
+                  <a role="link" class="menu-item t24" href="contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+
+                <div id="burger-menu-footer">
+                  <div class="BMF-top">
+                    <p>Our social media</p>
+                    <div class="social-icons">
+                      <a role="link" href="#"
+                        ><i class="social-links fa fa-brands fa-facebook-f"></i
+                      ></a>
+                      <a
+                        role="link"
+                        href="https://www.linkedin.com/company/onyx-air/about/"
+                        ><i class="social-links fa fa-brands fa-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="BMF-bot">
+                    <a role="link" href="privacypolicy.html" class="left-ali"
+                      >Privacy Policy
+                    </a>
+                    <hr />
+                    <a role="link" href="careers.html">Careers</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Logo and Button -->
+        <img
+          id="OnyxAirLogo"
+          alt="Onyx Air Logo"
+          onclick="window.location.href='index.html'"
+        />
+        <button
+          role="link"
+          id="btn-request-flight-private"
+          class="btn-request t12"
+          type="button"
+          onclick="window.location.href='index.html#request-flight'"
+        >
+          QUOTE
+        </button>
+      </div>
+    </header>
+    <!-- Hero -->
+    <div id="hero-empty-legs" class="hero-container">
+      <img id="empty-legs-hero" alt="Private jet in air" />
+      <div class="hero-text-container">
+        <h1 class="font-hr centered t64 semibweight">Empty Legs</h1>
+      </div>
+    </div>
+    <main id="body-content-sup">
+      <section id="jet-for-less">
+        <div class="container-jet-less main-container">
+          <div class="text-jet-less">
+            <h2 class="font-pm semibweight">Jet For Less</h2>
+            <hr />
+            <p>
+              One of the best-kept secrets of private aviation is the concept of
+              an empty leg flight. These deeply discounted flights are available
+              when an aircraft needs to fly from its base (or current location)
+              to another airport where it has a scheduled departure. Instead of
+              having the airplane fly empty and thereby make no money on the
+              flight, many operators choose to sell these positioning flights at
+              a significant discount.
+            </p>
+          </div>
+          <div class="image-jet-less">
+            <img id="img-jet-for-less" alt="Private jet on tarmac" />
+          </div>
+        </div>
+      </section>
+      <div class="no-gap">
+        <section id="newsletter">
+          <div class="newsletter-bg">
+            <div class="main-container">
+              <div class="newsletter-top">
+                <p class="font-tr">Stay Informed</p>
+                <h2 class="font-tr semibweight">Receive Exclusive Updates</h2>
+                <hr />
+                <p class="font-tr">
+                  At Onyx Air, we publish a weekly list of empty leg flights for
+                  the most popular itineraries. Sign up here to receive our
+                  weekly empty leg list!
+                </p>
+              </div>
+              <div class="newsletter-bot main-container">
+                <form
+                  action="POST"
+                  id="newsletter-form"
+                  data-netlify="true"
+                  name="Newsletter Form"
+                >
+                  <label for="email-newsletter"></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email-newsletter"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="sign-up"></label>
+                  <button
+                    id="sign-up"
+                    type="submit"
+                    form="newsletter-form"
+                    role="button"
+                    value="Sign Up"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Request Video Banner -->
+        <section id="request-video">
+          <div class="video-container">
+            <div class="request-video-text">
+              <p class="t32 font-tr semibweight">
+                Excellence in Luxury Aviation
+              </p>
+              <button
+                role="link"
+                class="btn-read-more-bn t32"
+                type="button"
+                onclick="window.location.href='index.html#request-flight'"
+              >
+                REQUEST
+              </button>
+            </div>
+            <video autoplay muted loop playsinline>
+              <source
+                id="video-loop-mp4"
+                src="Request_Banner.mp4"
+                type="video/mp4"
+              />
+              <source
+                id="video-loop"
+                src="Request_Banner.webm"
+                type="video/webm"
+              />
+              Your browser doesn't support the video.
+            </video>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="logo">
+              <p class="font-tr t12">Onyx Air</p>
+              <img
+                id="OnyxAirLogoFoot"
+                alt="Onyx Air Logo"
+                onclick="window.location.href='index.html'"
+              />
+            </div>
+            <div class="site-links">
+              <p class="font-tr t12">
+                <a href="privacypolicy.html">Privacy Policy</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="careers.html">Careers</a>
+              </p>
+              <div class="vl"></div>
+              <p class="font-tr t12">
+                <a href="contact.html">Contact Us</a>
+              </p>
+            </div>
+            <div class="footer-social-links">
+              <a role="link" href="#"
+                ><i class="social-links fa fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                role="link"
+                href="https://www.linkedin.com/company/onyx-air/about/"
+                ><i class="social-links fa fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-bot">
+            <p class="font-tr t10">
+              &copy Onyx Air 2022. Onyx Air®, and the Onyx Air logo® are
+              registered trademarks of Onyx Air. All rights reserved. Onyx Air
+              LLC is an Air Charter Broker and not a U.S. or foreign direct air
+              carrier. Onyx Air LLC does not own or operate any aircraft and
+              contracts air transportation services to FAA Certified Part 135
+              carriers or their foreign equivalents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
